@@ -1,0 +1,304 @@
+/*-----------------
+GLOBAL
+-------------------*/
+*, 
+::after, 
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button,
+i,
+li,
+img {
+  cursor: pointer;
+}
+
+i {
+  color: #808080;
+  font-size: 1.2rem;
+}
+
+/*-----------------
+GLOBAL LAYOUT
+-------------------*/
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  font-family: sans-serif;  
+  line-height: 1.4;
+}
+
+.container {
+  min-width: 220px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-----------------
+NAV
+-------------------*/
+.header {
+  background-image: url("./images/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+  gap: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.nav--logo-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo {
+  width: 50px;
+}
+
+.nav--icon {
+  margin-left: .5em;
+}
+
+.nav--menu {
+  color: #808080;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.nav--menu li {
+  padding-top: 3em;
+  padding-bottom: .5em;
+}
+
+.nav--menu--item i {
+  padding-right: .4em;
+}
+
+.hidden {
+  display: none;
+}
+
+.header--title {
+  color: #f08080;
+  opacity: .8;
+  text-align: center;
+}
+.header--title-wrapper {
+  background-color: rgba(216,215,215,0.5);
+  padding: .625em;
+}
+
+.header--bottom {
+  padding: 1.25em;
+}
+
+/*-----------------
+MAIN SECTION
+-------------------*/
+main {
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  gap: 1.25em;
+}
+
+main:not(:last-child) {
+  margin-bottom: 1.25em;
+}
+
+article {
+  color: #747373;
+  background-color: #f5f1f1;
+  padding: 1.25em;
+}
+.article--date {
+  display: flex;
+  align-items: end;
+  color: #f0e68c;
+  text-shadow: 1px 1px 5px #000;
+  padding: 14em 0 .4em .4em;
+}
+
+.sakura {
+  background-image: url("./images/sakura.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comida {
+  background-image: url("./images/comida.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fuji {
+  background-image: url("./images/fuji.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.noche {
+  background-image: url("./images/noche.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article--title {
+  background-color: #f08080;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 1em 0 .2em .3em;
+  margin-top: .3em;
+}
+
+.article--text {
+  padding: 1em 0;
+}
+
+.articles,
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+}
+
+.articles:first-child {
+  background-color: #dad9d9;
+}
+
+.article--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25em;
+  gap: 1.25em;
+}
+
+.side-bar {
+  background-color: #dad9d9;
+}
+
+.side-bar div:last-child {
+  margin-bottom: 0;
+}
+
+.full-width-container {
+  padding: .625em;
+}
+
+/*-----------------
+FOOTER  
+-------------------*/
+
+footer {
+  padding: 1.25em;
+  background-color: #dad9d9;
+}
+
+footer > div {
+  padding: .625em;
+  background-color: #f5f1f1;
+  text-align: center;
+}
+
+/*-----------------
+MEDIA QUERIES
+-------------------*/
+
+/* Tablets */
+@media (min-width: 768px) {
+  .nav {
+    margin-bottom: .625em;
+  }  
+
+  .article--wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  article {
+    width: 50%;
+  }
+  
+  .side-bar > div {
+    margin-bottom: .625em;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hidden {
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .nav--menu li {
+    padding: 0;
+  }
+
+  .nav--menu {
+    display: flex;
+    gap: 2em;
+  }
+
+  .header--title-wrapper {
+    padding: 1.5em 0 4.5em;
+    margin-top: 5em;
+  }
+
+  .article--text {
+    column-count: 2;
+    column-gap: 1.8em;
+  }
+
+  .header--bottom {
+    padding-bottom: 0;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  main:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .articles {
+    width: 80%;  
+  } 
+
+  .side-bar {
+    width: 20%;  
+  } 
+}

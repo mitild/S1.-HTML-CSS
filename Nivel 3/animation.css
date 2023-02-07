@@ -1,0 +1,36 @@
+.animated-logo {
+  position: relative;
+  animation: logoAnimation 7s;
+}
+
+.header--title {
+  position: relative;
+  animation: titleAnimation 3s;
+}
+
+@keyframes logoAnimation {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+
+  50% {
+    scale: 1.3;
+    opacity: 1;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
