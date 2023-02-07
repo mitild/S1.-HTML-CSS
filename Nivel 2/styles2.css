@@ -252,14 +252,13 @@ MEDIA QUERIES
   }
 }
 
-
 /* Desktop */
 @media (min-width: 1024px) {
   .hidden {
     display: block;
   }
 
-  .hamburger-icon {
+  #hamburger-icon {
     display: none;
   }
 
