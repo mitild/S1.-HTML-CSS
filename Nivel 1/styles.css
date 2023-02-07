@@ -141,6 +141,7 @@ MEDIA QUERIES
 -------------------*/
 
 /* Tablets */
+
 @media (min-width: 768px) {
   .wrapper-a-top {
     flex-direction: row;
@@ -186,6 +187,7 @@ MEDIA QUERIES
 
 
 /* Desktop */
+
 @media (min-width: 1024px) {
   .container-b {
     flex-direction: row;
