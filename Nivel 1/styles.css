@@ -108,17 +108,8 @@ SECOND CONTAINER
   background-color: #ED815E;
 }
 
-.wrapper-b-2 > div {
-  background-color: #F2B677;
-}
-
 .wrapper-b-2 div:last-child {
   margin-bottom: 0;
-}
-
-.full-width-container {
-  background-color: #7BA2C1;
-  padding: .625em;
 }
 
 .wrapper-b-2 > div {
@@ -126,6 +117,12 @@ SECOND CONTAINER
   background-color: #F2B677;
   margin-bottom: 1.25em;
 }
+
+.full-width-container {
+  background-color: #7BA2C1;
+  padding: .625em;
+}
+
 
 /*-----------------
 THIRD CONTAINER
